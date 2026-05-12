@@ -46,6 +46,8 @@ else:
             print(f"please schedule an appointment  {first_input} ")"""
             
 """ i know this code is not perfect but it is just an example to show how we can use nested if statements in python. we can also use elif statements to check for multiple conditions instead of using nested if statements. for example we can rewrite the above code using elif statements as follows:"""
+'''
+
 if age <18  :
     print(f"tu abhi bhi yahi hai {first_input} ")
 elif age >100:
@@ -58,7 +60,7 @@ else:
         print(f"congratulations {first_input} your driving licence will be issued soon")
     else:
         print(f"please schedule an appointment  {first_input} ")
-        
+        '''
         
 # RULE 1:
 # Every condition statement must end with a colon (:)
@@ -107,3 +109,58 @@ elif condition4:
 else:
     pass
 '''
+
+"""lets understand comparison operators in python with the help of a program to check the temperature to play cricket or not
+COMPARISON OPERATORS
+
+These create boolean results.
+
+Operator	
+==	equal  NOTE -  in programming = is a asingment operator that is use to aasign a value to a variable 
+
+==  is a comparion operator that is used to compare two values and it returns true if the values are equal and false if the values are not equal. 
+
+!=	not equal
+>	greater
+<	smaller
+>=	greater/equal
+<=	smaller/equal
+
+"""
+
+
+
+#lets make a program to check the temperature to play cricket or not
+"""
+if tem > 40 ------- too hot to play cricket
+if temp >0 and temp < 20 ------ too cold to play cricket
+if tem > 100 -------- are you still alive ?
+if tem < 0 --------- you are a yeti living in ice age 
+if tem < 40 and tem > 20 ------- perfect for playing cricket
+
+"""
+temp = int (input("enter the temperature in degree celsius "))
+
+'''if temp > 100:
+    print("are you still alive ?")
+elif temp <=100 and temp>= 40:
+    print("too hot to play cricket")
+elif temp <=40 and temp >= 20:
+    print("perfect for playing cricket")
+elif temp < 20 and temp > 0:
+    print("too cold to play cricket")
+else:
+    print("you are a yeti living in ice age ")'''
+    
+    
+# we can write the above code in a more concise way using logical operators as follows:
+if temp > 100:
+    print("are you still alive ?")
+elif 40 <= temp <= 100:
+    print("too hot to play cricket")
+elif 20<= temp < 40:
+    print("perfect for playing cricket")
+elif 0 <=temp < 20:
+    print("too cold to play cricket")
+else:
+    print("you are a yeti living in ice age ")
