@@ -58,3 +58,52 @@ else:
         print(f"congratulations {first_input} your driving licence will be issued soon")
     else:
         print(f"please schedule an appointment  {first_input} ")
+        
+        
+# RULE 1:
+# Every condition statement must end with a colon (:)
+
+if True:
+    pass
+
+
+# RULE 2:
+# Indentation is mandatory in Python
+# Python uses indentation to define code blocks
+
+if True:
+    print("inside if block")
+else:
+    print("outside if block")
+
+
+
+# RULE 4:
+# else never takes a condition
+
+# CORRECT ✅
+'''else:
+    pass'''
+
+# WRONG ❌
+# else condition:
+
+
+# RULE 5:
+# Multiple elif statements are allowed
+'''
+if condition1:
+    pass
+
+elif condition2:
+    pass
+
+elif condition3:
+    pass
+
+elif condition4:
+    pass
+
+else:
+    pass
+'''
